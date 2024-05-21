@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex{
+    display: flex;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.rgba{
+    margin-right: 20px;
+}
+.rgba .box{
+    background: color(srgb 1 0.5 0);
+}
+.p3 .box{
+    background: color(display-p3 1 0.5 0);
+}
+</style>
+</head>
+<body>
+    <div class="flex">
+        <div class="rgba">
+            <h1>rgba</h1>
+            <div class="box">1 0.5 0</div>
+            <div class="box" style="background:color(srgb 1 0 0.5);">1 0 0.5</div>
+            <div class="box" style="background:red">1 0 0</div>
+            <div class="box" style="background:rgb(0 183 150)">0 183 150</div>
+        </div>
+        <div class="p3">
+            <h1>p3</h1>
+            <div class="box">1 0.5 0</div>
+            <div class="box" style="background:color(display-p3 1 0 0.5) ;">1 0 0.5</div>
+            <div class="box" style="background:color(display-p3 1 0 0) ;">1 0 0</div>
+            <div class="box" style="background:color(display-p3 0 0.71 0.58) ;">0 183 150</div>
+
+        </div>
+    </div>
+</body>
+</html>
